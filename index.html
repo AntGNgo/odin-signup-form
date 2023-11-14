@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carefree Coffee</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -20,7 +21,7 @@
             <p>You <span>know</span> you want to.</p>
         </div>
         <form action="/">
-            <fieldset>
+            <fieldset class="form-inputs">
                 <legend>Let's do this!</legend>
                 <fieldset>
                     <label for="first-name">First Name</label>
@@ -28,8 +29,21 @@
                     <label for="last-name">Last Name</label>
                     <input type="text" id="last-name" name="last-name">
                 </fieldset>
+                <fieldset>
+                    <label for="text">Email</label>
+                    <input type="text" name="email" id="email">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" name="phone" id="phone">
+                </fieldset>
+                <fieldset>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+                    <label for="confirm-password">Confirm Password</label>
+                </fieldset>
             </fieldset>
+            <button type="submit">Create Account</button>
         </form>
+        <p>Already have and account? <a href="#">Log in</a></p>
     </div>
 </body>
 
