@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&family=Lora:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300&family=Open+Sans&family=Roboto:ital,wght@0,400;0,900;1,300&family=Work+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,400&display=swap');
 
 body {
-	font-family: 'Lora', serif;
+	font-family: 'Work Sans', sans-serif;
 	font-size: 10px;
 	display: flex;
 	height: 100vh;
+	color: #f2f4f3;
+}
+
+span {
+	font-style: italic;
 }
 
 .left {
@@ -13,12 +18,95 @@ body {
 	background-size: cover;
 }
 
+.left-banner {
+	font-size: 5rem;
+	background-color: rgba(0, 0, 0, 0.303);
+	text-align: center;
+	margin-top: 230px;
+	padding: 15px 0;
+}
+
+.left-banner img {
+	width: 100px;
+	stroke: white;
+}
+
 .right {
 	flex: 1;
-	background-color: #a9927d;
+	background-color: #0a0908;
 	font-size: 1.2rem;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	/* align-items: center; */
 	justify-content: center;
+	gap: 100px;
+}
+
+.right-text {
+	display: flex;
+	flex-direction: column;
+	padding-right: 40px;
+	gap: 40px;
+	font-size: 1.5rem;
+}
+
+.right > div,
+.login {
+	padding-left: 40px;
+}
+
+button {
+	margin-left: 40px;
+}
+
+form {
+	align-self: flex-start;
+	width: 100%;
+}
+
+.form-inputs p {
+	font-size: 1.8rem;
+	font-weight: 600;
+	margin: 20px 0px;
+}
+
+form button {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 1.4rem;
+	padding: 8px 20px;
+	background-color: #22333b;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+form button:hover {
+	cursor: pointer;
+}
+
+.form-inputs {
+	box-shadow: 1px 1px 6px -1px rgba(0, 0, 0, 0.27);
+	padding-left: 40px;
+	background-color: #22333b;
+}
+
+.form-inputs fieldset {
+	display: flex;
+	gap: 50px;
+}
+
+label {
+	margin-bottom: 5px;
+}
+
+[type='text'],
+[type='password'] {
+	padding: 5px 100px 5px 5px;
+	margin-bottom: 20px;
+}
+
+.form-inputs fieldset div {
+	display: flex;
+	flex-direction: column;
 }
