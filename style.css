@@ -27,7 +27,7 @@ span {
 }
 
 .left-banner img {
-	width: 100px;
+	width: 102px;
 	stroke: white;
 }
 
@@ -37,9 +37,12 @@ span {
 	font-size: 1.2rem;
 	display: flex;
 	flex-direction: column;
-	/* align-items: center; */
 	justify-content: center;
 	gap: 100px;
+}
+
+.right-text-top p:first-child {
+	margin-bottom: 5px;
 }
 
 .right-text {
@@ -109,4 +112,9 @@ label {
 .form-inputs fieldset div {
 	display: flex;
 	flex-direction: column;
+}
+
+form p a {
+	text-decoration: none;
+	color: #a9927d;
 }
